@@ -14,7 +14,7 @@ Currently is in really early alpha: supports collection only from vk.com and has
 ### Structure of application
 [Diagram of the system](https://docs.google.com/drawings/d/1NiwHOa0rWSJaT0ZZxkrldaXMVUsPHpnPuBXrBtgFiaU/edit?usp=sharing) on Google Docs
 
-`VK.receiver` – responcible for getting updates from the social network and putting them into queue.   
+`VK.receiver` – responsible for getting updates from the social network and putting them into queue.   
 `VK2Telegram.converter` – takes messages from the queue, selects messages worth passing forward, transforms them to Telegram request format and puts them into another queue.  
 `Telegram.sender` – takes messages from the queue and makes request.   
 
